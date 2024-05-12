@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "360585903176",
+    "project_id": "financer1",
+    "storage_bucket": "financer1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360585903176:android:73e239dbed30cea364ac7d",
+        "android_client_info": {
+          "package_name": "com.ker1xx.financer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360585903176-74moas1n0fqdlgn1t484ek8p3hotv2v7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ker1xx.financer",
+            "certificate_hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+          }
+        },
+        {
+          "client_id": "360585903176-qf0v87h2mqdgjk834aib9km37d4bsn4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmIv3i95ZYTIaP7r5htIi7R4LfqCRAGvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360585903176-qf0v87h2mqdgjk834aib9km37d4bsn4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

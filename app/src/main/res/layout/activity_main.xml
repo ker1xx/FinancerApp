@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:screenOrientation="portrait">
+
+    <include
+        android:id="@+id/header_main"
+        layout="@layout/header"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        app:layout_constraintTop_toBottomOf="@id/header_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/control_view_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/current_date_TV"
+                style="@style/default_text_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="5sp"
+                android:textSize="35sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="15sp"
+                android:id="@+id/date_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/current_date_TV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <GridLayout
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/control_view_main"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <Button
+                android:id="@+id/SpendingButton"
+                style="@style/subpanel_main_gray"
+                android:layout_width="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:drawableTop="@drawable/arrow_up_36_ic"
+                android:paddingTop="20sp"/>
+            <Button
+                android:id="@+id/IncomingButton"
+                android:layout_column="1"
+                android:layout_row="0"
+                style="@style/subpanel_main_green"
+                android:drawableTop="@drawable/arrow_down_36_ic"
+                android:paddingTop="20sp"/>
+            <Button
+                android:id="@+id/BudgetLeftButton"
+                android:layout_column="0"
+                android:layout_row="1"
+                style="@style/subpanel_main_green"
+                />
+            <Button
+                android:id="@+id/BigSpendingButton"
+                android:layout_column="1"
+                android:layout_row="1"
+                style="@style/subpanel_main_gray"/>
+
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include
+        android:id="@+id/nav_bar_main"
+        layout="@layout/nav_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

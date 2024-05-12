@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Frames.EntryPhoneCodeFragment"
+    android:background="@color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15sp"
+        android:id="@+id/enter_code_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/default_text_white"
+        android:textSize="22sp"
+        android:text="@string/enter_sms_code"
+        />
+        <com.chaos.view.PinView
+            app:itemSpacing="6sp"
+            app:itemHeight="50sp"
+            app:itemWidth="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_code_TV"
+            android:id="@+id/id_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemCount="6"
+            android:layout_margin="10dp"
+            android:itemBackground="@color/subpanel_gray"
+            android:padding="0sp"
+            android:cursorVisible="true"
+            app:lineColor="@color/white"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:textSize="22sp"
+            android:inputType="number"
+            app:hideLineWhenFilled="true"
+            style="@style/PinWidget.PinView"
+            app:itemRadius="10sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

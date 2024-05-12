@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+    <item android:id="@+id/daily"
+        android:title="@string/days"
+        android:icon="@drawable/coin_ic_36">
+    </item>
+    </group>
+    <group>
+    <item android:id="@+id/monthly"
+        android:title="@string/months"
+        android:icon="@drawable/calendar_ic_36">
+    </item>
+    </group>
+    <group>
+    <item android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/settings_ic_36"/>
+    </group>
+</menu>

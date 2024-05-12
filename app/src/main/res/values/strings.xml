@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Financer</string>
+    <string name="title_activity_entry">EntryActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="greeting">Welcome!\n Chose an option to log in!</string>
+    <string name="hint_on_login">Enter your name here</string>
+    <string name="swipe_right_hint">Swipe right to continue!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="local_log_in">Log in with phone</string>
+    <string name="vk_log_in">Log in with Google</string>
+    <string name="write_phone_number">Enter your phone\'s number</string>
+    <string name="phone_number_hint" tools:ignore="Typos">+7 xxx xxx xx xx</string>
+    <string name="get_phone_code">Get confirmation code via SMS</string>
+    <string name="enter_sms_code">Enter code from SMS</string>
+    <string name="input_name">What to call you?</string>
+    <string name="confirm_name">Confirm</string>
+    <string name="input_name_hint">Write your name here…</string>
+    <string name="welcome">Welcome, </string>
+    <string name="months"><big><font color="@color/white" face="@font/sf_pro_text_bold">Monthly</font></big></string>
+    <string name="days"><big><font color="@color/white" face="@font/sf_pro_text_bold">Daily</font></big></string>
+    <string name="settings"><big><font color="@color/white" face="@font/sf_pro_text_bold">Settings</font></big></string>
+    <string name="budget_text">Set your monthly income</string>
+    <string name="Monthly_top_text">This is your monthly expenses</string>
+    <string name="Monthly_mid_text"> days this month you met your daily budget</string>
+</resources>

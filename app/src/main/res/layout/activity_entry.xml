@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntryActivity"
+    android:background="@color/background"
+    android:screenOrientation="portrait">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/entry_top_icon_IV"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/entry_top_icon"/>
+
+
+    <ImageView
+        android:id="@+id/entry_logo_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/financer_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/entry_top_icon_IV"
+        android:padding="15sp"/>
+
+    <FrameLayout
+        android:id="@+id/entry_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/entry_logo_IV">
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
